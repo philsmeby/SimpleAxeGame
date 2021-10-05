@@ -64,7 +64,7 @@ int main()
 		BeginDrawing();
 		ClearBackground(WHITE);
 		DrawText(FormatText("Player: %i,%i", player.pos_x,player.pos_y), 10, 10, 20, LIGHTGRAY);
-		DrawText(FormatText("Axe: %i,%i", axe.pos_x,axe.pos_y), 10, 30, 20, LIGHTGRAY);
+		DrawText(FormatText("Axe: %i,%i", axe.pos_x,axe.bottom), 10, 30, 20, LIGHTGRAY);
 
 		// Check if the player has collided with the axe
 		if (!hasCollidedWithAxe(&player, &axe))
